@@ -10,6 +10,8 @@ module Fullslate
       @id = params["id"]
       @first_name = params["first_name"]
       @last_name = params["last_name"]
+      @phone = params["phone"]
+      @email = params["email"]
 
       if @id.nil?
         raise Fullslate::EmployeeNotFound
